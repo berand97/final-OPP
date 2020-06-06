@@ -1,21 +1,21 @@
 package unac.edu.co;
 
 public class Auto extends Thread {
-    private int n;
-    private int AutoNumber;
+    private int km;
+    private int car;
 
-    public Auto(int n, int AutoNumber) {
+    public Auto(int km, int car) {
         super();
-        this.n = n;
-        this.AutoNumber = AutoNumber;
+        this.km = km;
+        this.car = car;
     }
 
     public void run()
     {
-        for(int i =1;i<=n;i++)
+        for(int i = 1; i<= km; i++)
         {
-            System.out.println("El auto "+ AutoNumber +"  "+i+" km");
+            System.out.println("El auto "+ car +"  "+i+" km");
         }
-        System.out.println("El auto "+ AutoNumber +" termino el recorrido");
+        System.out.println("El auto "+ car +" termino el recorrido");
     }
 }
